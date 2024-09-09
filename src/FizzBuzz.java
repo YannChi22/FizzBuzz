@@ -8,8 +8,8 @@ class FizzBuzz {
         for (int i = 1; i < 100; i++) {
 
             // Find out which numbers divide i.
-            boolean divisibleBy3 = i % 3 == 0;
-            boolean divisibleBy5 = i % 5 == 0;
+            boolean divisibleBy3 = isDivisibleBy3(i);
+            boolean divisibleBy5 = isDivisibleBy5(i);
 
             // Print our appropriate result.
             if (divisibleBy3 && divisibleBy5) {
@@ -30,5 +30,15 @@ class FizzBuzz {
 
             }
         }
+    }
+
+    private static boolean isDivisibleBy5(int i) {
+        boolean divisibleBy5 = i % 5 == 0;
+        return divisibleBy5;
+    }
+
+    private static boolean isDivisibleBy3(int i) {
+        boolean divisibleBy3 = i % 3 == 0;
+        return divisibleBy3;
     }
 }
