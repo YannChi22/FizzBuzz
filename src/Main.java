@@ -1,8 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        FizzBuzz.main(args);
+        FizzBuzz.main();
 
-        FizzBuzz.isDivisibleBy5(5);
+     //   FizzBuzz.isDivisibleBy5(5);
 
     }
 }
+
